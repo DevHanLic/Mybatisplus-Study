@@ -14,7 +14,6 @@ import com.baomidou.springboot.entity.enums.PhoneEnum;
 @SuppressWarnings("serial")
 public class User extends SuperEntity<User> {
 
-
     /**
      * 名称
      */
