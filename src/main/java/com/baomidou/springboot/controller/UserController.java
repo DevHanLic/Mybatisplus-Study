@@ -50,7 +50,7 @@ public class UserController extends ApiController {
      * http://localhost:8080/user/test
      */
     @GetMapping("/test/{current}/{Name}")
-    public IPage<User> test(@PathVariable("current") String current,@PathVariable("Name") String Name) {
+    public IPage<User> test(@PathVariable("current") String current, @PathVariable("Name") String Name) {
         QueryWrapper<User> userQueryWrapper = new QueryWrapper<User>();
         userQueryWrapper.like(Name != null, "name", Name);
         return userService.page(new Page<User>(Integer.parseInt(current), 10), userQueryWrapper);

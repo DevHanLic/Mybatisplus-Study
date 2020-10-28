@@ -34,7 +34,6 @@ public class User extends SuperEntity<User> {
      */
     @TableField(fill = FieldFill.INSERT)
     private Date testDate;
-
     private Long role;
     private PhoneEnum phone;
 
